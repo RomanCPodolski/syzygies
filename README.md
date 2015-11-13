@@ -33,7 +33,7 @@ To build it locally run
 ## Usage
 
 Set an enviroment variable that points to a wordlist.txt.
-If you don't have a wordlist you can download it HERE.
+If you don't have a wordlist you can download it [HERE](https://raw.githubusercontent.com/RomanCPodolski/syzygies/master/wordsEn.txt).
 ```
     $ export WORD_LIST=/path/to/your/wordlist.txt
 ```
@@ -53,7 +53,7 @@ NOTE: For certain word combinations like 'pen' and 'paper' syzygies could run qu
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/romancpodolski/syzygies.
+Bug reports and pull requests are welcome on GitHub at https://github.com/RomanCPodolski/syzygies.
 This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 

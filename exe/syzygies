@@ -1,0 +1,41 @@
+#!/usr/bin/env ruby
+#
+# syzgies.rb
+# Copyright (C) 2015 romancpodolski <romancpodolski@Romans-MBP.fritz.box>
+#
+# Distributed under terms of the MIT license.
+#
+#
+
+require "benchmark"
+require "syzygies"
+
+if ARGV.length != 2
+	puts """
+	Call with exactly two words, like this
+
+	syzygies EARTHQUAKE TSUNAMY
+	"""
+	exit(0)
+
+end
+
+Thread.new{
+	result = '' 
+	Syzygies.iterativeDeepeningSearch(ARGV[0], ARGV[1]).parents.each do |w|
+		result += w 
+		result += '->'
+	end
+	puts result.chomp('->')
+	exit(0)
+}.join
+
+Thread.new{
+	result = '' 
+	Syzygies.iterativeDeepeningSearch(ARGV[1], ARGV[0]).parents.reverse_each do |w|
+		result += w 
+		result += '->'
+	end
+	puts result.chomp('->')
+	exit(0)
+}.join

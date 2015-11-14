@@ -16,23 +16,27 @@ It was created as an assignment for the post-graduate lecture 'artificial intell
 This program is implemented in ruby.
 To execute it you'll need a ruby runtime.
 I recommend the ruby version manager for an installation for all linux/unix based systems.
-See rvm.io.
+See https:/rvm.io.
 
-To install this program from the internet run
+To install this program using rubygems run
 ```
     $ gem install syzygies
 ```
-To build it locally run
+To build it locally, cd to the sources and run
 
 ```
     $ gem build syzygies.gemspec 
     $ gem install syzygies-1.0.0.gem 
 ```
+You could also use bundler and rake to build the sources:
+```
+   $ bundle exec rake install:local
+```
 
 
 ## Usage
 
-Set an enviroment variable that points to a wordlist.txt.
+Set an environment variable that points to a wordlist.txt.
 If you don't have a wordlist you can download it HERE.
 ```
     $ export WORD_LIST=/path/to/your/wordlist.txt
@@ -53,7 +57,7 @@ NOTE: For certain word combinations like 'pen' and 'paper' syzygies could run qu
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/romancpodolski/syzygies.
+Bug reports and pull requests are welcome on GitHub at https://github.com/RomanCPodolski/syzygies.
 This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 

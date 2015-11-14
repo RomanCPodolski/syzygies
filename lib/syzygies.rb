@@ -1,3 +1,9 @@
+#
+# Copyright (C) 2015 romancpodolski <roman.podolski@tum.de>
+#
+# Distributed under terms of the MIT license.
+#
+#
 require "syzygies/version"
 require "syzygies/wordlist"
 

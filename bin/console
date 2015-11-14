@@ -1,5 +1,10 @@
 #!/usr/bin/env ruby
-
+#
+# Copyright (C) 2015 romancpodolski <roman.podolski@tum.de>
+#
+# Distributed under terms of the MIT license.
+#
+#
 require "bundler/setup"
 require "syzygies"
 

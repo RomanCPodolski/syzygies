@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 	spec.homepage      = "https://rubygems.org/gems/syzygies"
 
   spec.summary       = %q{A word puzzle}
-  spec.description   = %q{ This is a simplification of a word puzzle created by the English polymath Lewis Caroll where the player is given a start word (e.g. WHITE) and a goal word (e.g. GREEN).  One must conduct a chain of words, where, for adjacent words in the chain either the first two letters of one word are the last two letters of the next word, or the last two letters last two letters of one word are the first two letters of the next word.  }
+  spec.description   = %q{This is a simplification of a word puzzle created by the English polymath Lewis Caroll where the player is given a start word (e.g. WHITE) and a goal word (e.g. GREEN).  One must conduct a chain of words, where, for adjacent words in the chain either the first two letters of one word are the last two letters of the next word, or the last two letters last two letters of one word are the first two letters of the next word.  }
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -24,12 +24,12 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
-  #spec.executables   << 'syzygies'
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  #spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.executables   << 'syzygies'
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec"
-  spec.add_development_dependency "pry"
+  spec.add_development_dependency "rspec", "~> 3.4"
+  spec.add_development_dependency "pry", "~> 0.10.3"
 end

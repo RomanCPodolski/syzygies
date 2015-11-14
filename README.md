@@ -33,7 +33,6 @@ You could also use bundler and rake to build the sources:
    $ bundle exec rake install:local
 ```
 
-
 ## Usage
 
 Set an enviroment variable that points to a wordlist.txt.

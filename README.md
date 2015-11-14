@@ -26,7 +26,7 @@ To build it locally, cd to the sources and run
 
 ```
     $ gem build syzygies.gemspec 
-    $ gem install syzygies-1.0.0.gem 
+    $ gem install syzygies-X.X.X.gem # use the right version number here
 ```
 You could also use bundler and rake to build the sources:
 ```

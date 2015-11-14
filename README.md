@@ -36,8 +36,8 @@ You could also use bundler and rake to build the sources:
 
 ## Usage
 
-Set an environment variable that points to a wordlist.txt.
-If you don't have a wordlist you can download it HERE.
+Set an enviroment variable that points to a wordlist.txt.
+If you don't have a wordlist you can download it [HERE](https://raw.githubusercontent.com/RomanCPodolski/syzygies/master/wordsEn.txt).
 ```
     $ export WORD_LIST=/path/to/your/wordlist.txt
 ```

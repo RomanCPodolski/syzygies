@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Syzygies::VERSION
   spec.authors       = ["Roman C. Podolski"]
   spec.email         = ["roman.podolski@tum.de"]
-	spec.homepage      = "https://rubygems.org/gems/syzygies"
+	spec.homepage      = "https://github.com/RomanCPodolski/syzygies"
 
   spec.summary       = %q{A word puzzle}
   spec.description   = %q{This is a simplification of a word puzzle created by the English polymath Lewis Caroll where the player is given a start word (e.g. WHITE) and a goal word (e.g. GREEN).  One must conduct a chain of words, where, for adjacent words in the chain either the first two letters of one word are the last two letters of the next word, or the last two letters last two letters of one word are the first two letters of the next word.  }
